@@ -14,7 +14,7 @@ services:
     # Custom domain (Let's Encrypt cert is automatic for this)
     # Replace with your real domain name.
     domains:
-      - automation.example.com
+      - leviekierhomelab.ddns.net
 
     envVars:
       # Encryption key for n8n credentials
@@ -44,14 +44,14 @@ services:
       # --- HTTPS / reverse-proxy related settings ---
       # Replace with your domain (no protocol)
       - key: N8N_HOST
-        value: automation.example.com
+        value: leviekierhomelab.ddns.net
       - key: N8N_PORT
         value: "443"
       - key: N8N_PROTOCOL
         value: https
       # Public URL n8n should use for webhooks & callbacks
       - key: WEBHOOK_URL
-        value: https://automation.example.com/
+        value: https://leviekierhomelab.ddns.net
       # Security hardening
       - key: N8N_SECURE_COOKIE
         value: "true"
